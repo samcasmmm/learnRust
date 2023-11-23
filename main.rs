@@ -40,6 +40,8 @@ fn variable(){
     println!("bool1: {}", bool1);
     println!("bool2: {}", bool2);
     println!("my_name: {}", my_name);
+    my_name = "Sameer Bagwan";
+    println!("mutable my_name {}", my_name);
     println!("num_arr1: {:?}", num_arr1);
     println!("num_arr2: {:?}", num_arr2);
     println!("str_arr1: {:?}", str_arr1);
@@ -47,6 +49,4 @@ fn variable(){
     println!("tuple_1: {:?}", tuple_1);
     println!("add_num: {}", add_num);
     println!("add_str: {}", add_str);
-
-
 }
