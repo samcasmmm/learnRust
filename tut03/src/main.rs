@@ -11,8 +11,13 @@ fn main() {
     let add = x + y;
     let sub = x - y;
     let multi = x * y;
+    let div = x / y;
+
+    let arr = [1, 2, 3, 4, 5];
 
     println!("{}", add);
     println!("{}", sub);
     println!("{}", multi);
+    println!("{}", div);
+    println!("{:?}", arr);
 }
