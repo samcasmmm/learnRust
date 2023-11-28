@@ -14,6 +14,12 @@ fn main() {
     let div = x / y;
 
     let arr = [1, 2, 3, 4, 5];
+    struct Person {
+        name: String,
+        age: String,
+    };
+
+    let person_1 = Person { name: (), age: () };
 
     println!("{}", add);
     println!("{}", sub);
