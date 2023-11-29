@@ -1,4 +1,7 @@
 
+
+
+// ! Rust Types
 // @Integer
 let mut a: u32 = 8;
 let b: u64 = 877;
@@ -57,6 +60,28 @@ fn mut_array () {
 
    println!("{:?}", array);
 };
+
+// @Slices
+
+fn string_literal(){
+   let mut array: [ i64; 4] = [1,2,3,4];
+let mut slices: &[i64] = &array[0..3]
+
+println!("The elements of the slices are : {slices:?}");
+
+}
+
+// @Vector
+fn vector_literal(){
+   let some_vector = vec![1,2,3,4,5]; 
+   println!("{:?}",some_vector);
+}
+// @tuple
+fn vector_literal(){
+   let tuple = (1, 'A' , "Cool", 78, true);
+
+   println!("{:?}",tuple);
+}
 
 
 
