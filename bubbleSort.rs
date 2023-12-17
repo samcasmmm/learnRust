@@ -21,3 +21,14 @@ fn main() {
     print_array(&sortable);
 }
 
+fn print_array<T: std::fmt::Display>(array: &[T]) {
+    print!("[");
+    for (i, elem) in array.iter().enumerate() {
+        print!("{}", elem);
+
+        if i != array.len() - 1 {
+            print!(",");
+        }
+    }
+    println!("]");
+}
