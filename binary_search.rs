@@ -6,15 +6,15 @@ fn binary_search(arr: &[T], target: &T) -> Option {
         let mid = left + (right - left) / 2;
 
         if &arr[mid] == target {
-            return Some(mid); // Target found, return its index
+            return Some(mid); 
         } else if &arr[mid] < target {
-            left = mid + 1; // Search the right half
+            left = mid + 1; 
         } else {
-            right = mid; // Search the left half
+            right = mid;
         }
     }
 
-    None // Target not found, return None
+    None
 }
 
 fn main() {
