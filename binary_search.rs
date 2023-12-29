@@ -1,0 +1,29 @@
+fn binary_search(arr: &[T], target: &T) -> Option {
+    let mut left = 0;
+    let mut right = arr.len();
+
+    while left < right {
+        let mid = left + (right - left) / 2;
+
+        if &arr[mid] == target {
+            return Some(mid); 
+        } else if &arr[mid] < target {
+            left = mid + 1; 
+        } else {
+            right = mid;
+        }
+    }
+
+    None
+}
+
+fn main() {
+    let numbers = vec![1, 4, 6, 8, 10, 25, 42, 53, 64, 72, 87, 99];
+    let target = 42;
+    let result = binary_search(&numbers, &target);
+
+    match result {
+        Some(index) => println!("Found {} at position: {}", target, index),
+        None => println!("{} is not present in the array", target),
+    }
+}
