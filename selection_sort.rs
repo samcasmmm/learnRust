@@ -1,7 +1,6 @@
 use std::cmp::Ord;
 use std::marker::Sized;
 
-// Define a generic function for selection sort
 pub fn selection_sort(array: &mut [T]) {
     let len = array.len();
     for i in 0..len {
