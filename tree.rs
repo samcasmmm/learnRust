@@ -26,7 +26,7 @@ mod tests {
         assert_eq!(tree.len(), 1);
         tree.insert(1);
         assert_eq!(tree.len(), 2);
-        tree.insert(2); // not a unique item
+        tree.insert(2); 
         assert_eq!(tree.len(), 2);
     }
 
