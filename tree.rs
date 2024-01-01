@@ -9,7 +9,6 @@ struct Node<T: Ord> {
 #[derive(Debug)]
 struct Subtree<T: Ord>(Option<Box<Node<T>>>);
 
-/// A container storing a set of values, using a binary tree.
 ///
 /// If the same value is added multiple times, it is only stored once.
 #[derive(Debug)]
