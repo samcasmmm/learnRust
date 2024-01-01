@@ -6,7 +6,6 @@ struct Node<T: Ord> {
     right: Subtree<T>,
 }
 
-/// A possibly-empty subtree.
 #[derive(Debug)]
 struct Subtree<T: Ord>(Option<Box<Node<T>>>);
 
