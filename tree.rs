@@ -1,4 +1,3 @@
-/// A node in the binary tree.
 #[derive(Debug)]
 struct Node<T: Ord> {
     value: T,
