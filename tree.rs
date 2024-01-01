@@ -9,8 +9,6 @@ struct Node<T: Ord> {
 #[derive(Debug)]
 struct Subtree<T: Ord>(Option<Box<Node<T>>>);
 
-///
-/// If the same value is added multiple times, it is only stored once.
 #[derive(Debug)]
 pub struct BinaryTree<T: Ord> {
     root: Subtree<T>,
