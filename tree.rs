@@ -14,7 +14,6 @@ pub struct BinaryTree<T: Ord> {
     root: Subtree<T>,
 }
 
-// Implement `new`, `insert`, `len`, and `has`.
 
 #[cfg(test)]
 mod tests {
