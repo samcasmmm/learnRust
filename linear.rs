@@ -10,3 +10,13 @@ fn linear_search(item: &T, arr: &[T]) -> i32 {
     }
     idx_pos
 }
+fn main() {
+    let index = linear_search(&"Rust", &vec!["Python", "Php", "Java", "C", "C++", "Rust"]);
+    println!("Position: {}", index);
+
+    let index = linear_search(&25, &vec![25, 62, 29, 43, 77]);
+    println!("Position: {}", index);
+
+    let index = linear_search(&855, &vec![25, 62, 29, 43, 77]);
+    println!("Position: {}", index);
+}
