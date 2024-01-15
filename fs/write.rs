@@ -11,7 +11,7 @@ fn write_to_file(file_path: &str, content: &str) -> io::Result<()> {
 }
 
 fn main() {
-    let file_path = "demo.txt";
+    let file_path = "example.txt";
     let content_to_write = "Hello, Rust!";
 
     // Attempt to write to the file
