@@ -1,3 +1,6 @@
+
+// https://www.hackertouch.com/rust-data-structures-and-algorithms.html
+
 fn insertion_sort(arr: &mut [T]) {
     for i in 1..arr.len() {
         let mut j = i;
